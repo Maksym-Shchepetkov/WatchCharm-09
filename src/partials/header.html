@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Watch Charm</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="logo" href="./index.html">watchcharm</a>
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-link current" href="./index.html">Home</a>
+                    </li>
+                    <li><a class="nav-link" href="">About Us</a></li>
+                    <li><a class="nav-link" href="">Catalog</a></li>
+                    <li><a class="nav-link" href="">Sale</a></li>
+                    <li><a class="nav-link" href="">Reviews</a></li>
+                    <li><a class="nav-link" href="">Contact Us</a></li>
+
+                    <div class="header-icons">
+                        <li>
+                            <a href="https://www.facebook.com/goITclub/">
+                                <svg class="item" width="36" height="36">
+                                    <use href="./images/icons.svg#icons-facebook" class="svg-icons"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/goitclub/">
+                                <svg class="item" width="36" height="36">
+                                    <use href="./images/icons.svg#icons-linkedin" class="svg-icons"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/GoIT">
+                                <svg class="item" width="36" height="36">
+                                    <use href="./images/icons.svg#icons-youtube" class="svg-icons"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="34" height="34">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close" data-menu-close>
+                <svg class="menu-icon-close">
+                    <use href="./images/icons.svg#icon-vectora"></use>
+                    <use href="./images/icons.svg#icon-vectorb"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul class="mobile-menu-list">
+                    <li><a class="mobile-nav-link mobile-current" href="./index.html">Home</a></li>
+                    <li><a class="mobile-nav-link" href="">About Us</a></li>
+                    <li><a class="mobile-nav-link" href="">Catalog</a></li>
+                    <li><a class="mobile-nav-link" href="">Sale</a></li>
+                    <li><a class="mobile-nav-link" href="">Reviews</a></li>
+                    <li><a class="mobile-nav-link" href="">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul class="icons-mobile-menu">
+                    <li class="mobile-icon-item"><a class="icon-link" href="">
+                            <svg class="team-icon">
+                                <use href="./images/icons.svg#icons-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mobile-icon-item"><a class="icon-link" href="">
+                            <svg class="team-icon">
+                                <use href="./images/icons.svg#icons-linkedin"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mobile-icon-item"><a class="icon-link" href="">
+                            <svg class="team-icon">
+                                <use href="./images/icons.svg#icons-youtube"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main></main>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
