@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="css/form.css">
+<div class="form-section container"> 
+    <h2 class="form-heading">Contact Us</h2> 
+ <div class="container-block-form">
+  <p class="form-paragraph">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
+     <form class="container-form" name="table" method="post" action="/form.html"> 
+          <input class="container-type-form" type="text" id="name" name="user_name" placeholder="Name" required> 
+          <input class="container-type-form" type="email" id="email" name="user_email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required> 
+          <input class="container-type-form" type="tel" id="tel" name="user_number" placeholder="+380" pattern="^+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" (+380-XX-XXX-XX-XX)" required> 
+          <textarea class="container-type-form" name="comment" id="comment">Comment</textarea> 
+ </form>
+ <button type="submit" class="btn-form">Send</button> 
+ <div class="image-wrapper">
+      <img class="form-image" src="img/Rectangle.png" alt="An exclusive and expensive watch"> 
+    </div>
+ </div>
+ </div>
