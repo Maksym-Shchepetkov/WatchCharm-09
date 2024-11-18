@@ -1,0 +1,263 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.container-footer {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.content {
+  padding: 40px 28px 28px 28px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.logo-footer {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.list-socseti-footer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 125px;
+}
+
+.link-socseti-footer {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+}
+
+.socseti-footer {
+  fill: #fbfbfbe1;
+}
+
+.link-tel-footer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  font-style: normal;
+  display: inline-block;
+  padding: 14px 20px;
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 16px;
+}
+
+.text-footer {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 40px;
+}
+
+.div-four-position-id {
+  display: flex;
+  column-gap: 49px;
+  margin-top: 92px;
+  margin-bottom: 24px;
+}
+
+.list-id-footer {
+  width: 147px;
+  height: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 16px;
+}
+
+.link-id-footer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: #fbfbfb;
+  display: block;
+}
+
+.address-footer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #fbfbfb;
+  font-style: normal;
+  width: 83px;
+  height: 48px;
+}
+
+.line {
+  width: 100%;
+  border: 1px inset rgba(251, 251, 251, 0.1);
+  margin-bottom: 24px;
+}
+
+.info-service-footer {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  opacity: 0.9;
+}
+
+.list-service-footer {
+  display: flex;
+  column-gap: 20px;
+}
+
+.link-service-footer {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(251, 251, 251, 0.5);
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .container-footer {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+
+  .content {
+    padding: 40px 40px 28px 40px;
+    position: relative;
+  }
+
+  .logo-footer {
+    font-size: 20px;
+  }
+  .list-socseti-footer {
+    margin-bottom: 0px;
+  }
+
+  .link-tel-footer {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 15px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .text-footer {
+    font-size: 28px;
+    line-height: 1.14;
+    width: 524px;
+    height: 96px;
+    margin: 0 auto;
+    margin-top: 86px;
+  }
+
+  .div-four-position-id {
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .list-id-footer {
+    flex-wrap: nowrap;
+    column-gap: 19px;
+    row-gap: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .link-id-footer {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .address-footer {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 162px;
+    height: 36px;
+  }
+
+  .line {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
+  .div-four-position-service {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-service-footer {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .link-service-footer {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .container-footer {
+    max-width: 1280px;
+  }
+
+  .socseti-footer:hover,
+  .socseti-footer:focus {
+    fill: #fdfdfd;
+  }
+
+  .text-footer {
+    margin-top: 0;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .div-four-position-id {
+    margin-top: 142px;
+  }
+
+  .list-id-footer {
+    column-gap: 40px;
+  }
+
+  .link-service-footer {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
