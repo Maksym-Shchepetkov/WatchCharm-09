@@ -1,373 +1,317 @@
-body {
-    font-family: "Gilroy", sans-serif;
-    color: #0c0c0c;
-    background-color: #fbfbfb;
-}
-
-
-/*reset*/
-
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-/*common*/
-
-.container {
-    max-width: 320px;
-    padding: 0 12px;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
 /*header*/
 
-.header {
-    background-color: #fbfbfb;
-}
-
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  border-bottom: 1px solid;
 }
 
 .nav-list {
-    display: none;
+  display: none;
 }
 
 .logo {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    display: block;
-    padding: 27.5px 0;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  display: block;
+  padding: 28px 0;
 }
 
 .burger-btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .burger-icon {
-    display: block;
-    stroke-width: 2.50px;
-    stroke: #0c0c0c;
+  fill: #0c0c0c;
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
 
-    .logo {
-        font-size: 20px;
-        padding: 34px 0;
-    }
+  .logo {
+    font-size: 20px;
+    padding: 34px 0;
+  }
 
-    .burger-icon {
-        stroke-width: 3px;
-    }
+  .burger-icon {
+    stroke-width: 3px;
+  }
 
-    .nav-list {
-        display: none;
-    }
+  .nav-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .header-container {
+    max-width: 1280px;
+  }
 
-    .header {
-        background: #fff;
-    }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
 
-    .header-nav {
-        display: flex;
-        align-items: center;
-    }
+  .logo {
+    padding: 32px 0;
+    margin-right: 203px;
+  }
 
-    .logo {
-        padding: 32px 0;
-        margin-right: 203px;
-    }
+  .burger-btn {
+    display: none;
+  }
 
-    .burger-btn {
-        display: none;
-    }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-    .nav-list {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
+  .nav-link {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    color: #0c0c0c;
+  }
 
-    .nav-link {
-        font-family: "Gilroy", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.3;
-        text-align: center;
-        color: #0c0c0c;
-    }
+  .current {
+    position: relative;
+  }
 
-    .nav-link.current {
-        position: relative;
-    }
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 24px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #3350e9;
+  }
 
-    .nav-link.current:hover::after {
-        content: "";
-        position: absolute;
-        left: 15px;
-        top: 24px;
-        width: 8px;
-        height: 8px;
-        border-radius: 100%;
-        background-color: #3350e9;
-    }
+  .svg-icons {
+    fill: #0c0c0c;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
 
-    .svg-icons {
-        fill: #0c0c0c;
-        width: 20px;
-        height: 20px;
-        opacity: 0.8;
-    }
+  .header-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 203px;
+  }
 
-    .header-icons {
-        display: flex;
-        gap: 10px;
-        margin-left: 203px;
-    }
+  .item {
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+  }
 
-    .item {
-        border: 1px solid rgba(12, 12, 12, 0.1);
-        border-radius: 10px;
-        padding: 8px;
-        width: 36px;
-        height: 36px;
-    }
+  .item:hover,
+  .item:focus {
+    border: 1px solid rgba(51, 80, 233, 0.1);
+  }
 
-    .item:hover,
-    .item:focus {
-        border: 1px solid rgba(51, 80, 233, 0.1);
-    }
-
-    .svg-icons:hover,
-    .svg-icons:focus {
-        fill: #3350e9;
-    }
+  .svg-icons:hover,
+  .svg-icons:focus {
+    fill: #3350e9;
+  }
 }
 
 /* -----mobile-menu----- */
 
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-width: 200px;
-    height: 100%;
-    background-color: #0c0c0c;
-    background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(0, 0, 0, 0.2)),
-        url(../img/mobmenu.jpg);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translate(100%, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 200px;
+  max-height: 90vh;
+  overflow: auto;
+  background-color: #0c0c0c;
+  background-image: url(../img/mobile-img.png);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: 240px;
-    margin-bottom: 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 240px;
+  margin-bottom: 260px;
 }
 
 .mobile-nav-link {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-    text-align: center;
-    color: #fbfbfb;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fbfbfb;
 }
 
 .mobile-menu-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: none;
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background-color: #0c0c0c;
-    stroke-width: 2.50px;
-    stroke: #fbfbfb;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #0c0c0c;
+  stroke-width: 2.5px;
+  stroke: #fbfbfb;
 }
 
-.mobile-nav-link.mobile-current:hover::after {
-    content: "";
-    position: absolute;
-    top: 260px;
-    left: 96px;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: #3350e9;
+.mobile-current::after {
+  content: '';
+  position: absolute;
+  top: 260px;
+  left: 96px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #3350e9;
 }
 
 .icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(251, 251, 251, 0.1);
-    border-radius: 10px;
-    padding: 8px;
-    width: 34px;
-    height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
 }
 
 .team-icon {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .icons-mobile-menu {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 40px;
-    margin-left: 39px;
-    margin-right: 39px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-left: 39px;
+  margin-right: 39px;
 }
 
 .mobile-icon-item {
-    width: 34px;
-    height: 34px;
+  width: 34px;
+  height: 34px;
 }
 
 .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu-nav {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .menu-icon-close {
-    fill: #0c0c0c;
-    width: 20px;
-    height: 20px;
+  fill: #0c0c0c;
+  width: 20px;
+  height: 20px;
 }
 
 .team-icon {
-    fill: #fbfbfb;
+  fill: #fbfbfb;
 }
 
 @media screen and (min-width: 768px) {
-    .mobile-menu {
-        max-width: 330px;
-        background: url(../img/tabmenu.jpg);
+  .mobile-menu {
+    max-width: 330px;
+    background-image: url(/img/tabmenu.jpg);
+  }
 
-    }
+  .mobile-menu-list {
+    gap: 32px;
+    margin-top: 310px;
+    margin-bottom: 350px;
+  }
 
-    .mobile-menu-list {
-        gap: 32px;
-        margin-top: 310px;
-        margin-bottom: 350px;
-    }
+  .mobile-menu-close {
+    top: 26px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    stroke-width: 3px;
+  }
 
-    .mobile-menu-close {
-        top: 26px;
-        right: 32px;
-        width: 40px;
-        height: 40px;
-        stroke-width: 3px;
-    }
+  .mobile-nav-link.mobile-current::after {
+    top: 330px;
+    left: 160px;
+  }
 
-    .mobile-nav-link.mobile-current::after {
-        top: 330px;
-        left: 160px;
-    }
+  .icon-link {
+    width: 36px;
+    height: 36px;
+  }
 
-    .icon-link {
-        width: 36px;
-        height: 36px;
-    }
+  .team-icon {
+    width: 20px;
+    height: 20px;
+  }
 
-    .team-icon {
-        width: 20px;
-        height: 20px;
-    }
+  .icons-mobile-menu {
+    margin-bottom: 50px;
+    margin-left: 101px;
+    margin-right: 101px;
+  }
 
-    .icons-mobile-menu {
-        margin-bottom: 50px;
-        margin-left: 101px;
-        margin-right: 101px;
-    }
+  .mobile-icon-item {
+    width: 34px;
+    height: 34px;
+  }
 
-    .mobile-icon-item {
-        width: 34px;
-        height: 34px;
-    }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 
-    .mobile-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
+  .mobile-menu-nav {
+    margin-bottom: auto;
+  }
 
-    .mobile-menu-nav {
-        margin-bottom: auto;
-    }
-
-    .menu-icon-close {
-        fill: #0c0c0c;
-        width: 20px;
-        height: 20px;
-    }
-
+  .menu-icon-close {
+    fill: #0c0c0c;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .mobile-menu {
-        display: none;
-    }
+  .mobile-menu {
+    display: none;
+  }
 }
