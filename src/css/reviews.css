@@ -59,11 +59,18 @@
 }
 
 @media screen and (min-width:768px) {
-    .container {
+    .reviews-title {
+        font-size: 48px;
+        line-height: 0.92;
 
-        max-width: 768px;
-        padding: 40px 32px;
-        margin: 0 auto;
+    }
+    .reviews-subtitle{
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    .reviews-text {
+        font-size: 16px;
+        line-height: 1.25;
     }
 
     .reviews-list-item:not(:first-child) {
@@ -85,11 +92,7 @@
 }
 
 @media screen and (min-width:1280px) {
-    .container {
-        max-width: 1280px;
-        padding: 50px 65px;
-        margin: 0 auto;
-    }
+   
 
     .reviews-list-item:not(:first-child) {
         display: block;
